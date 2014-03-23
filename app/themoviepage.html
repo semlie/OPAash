@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>My AngularJS App</title>
+        <link rel="stylesheet" href="css/app.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="row clearfix">
+                        <div class="col-md-10 column">
+                            <nav class="navbar navbar-default" role="navigation">
+
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li >
+                                            <a href="#">Link1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Link2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Link3</a>
+                                        </li>
+
+                                    </ul>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" />
+                                        </div> <button type="submit" class="btn btn-default">חפש</button>
+                                    </form>
+
+                                </div>
+
+                            </nav>
+                        </div>
+                        <div class="col-md-2 column">
+                            <img alt="140x140" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfp4gihoRSCirDtpanf0-PWGyhxXktkEO8Diqvycty9LDYAY3k" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center"> 
+                <button onclick="playPause()">Play/Pause</button> 
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                <br> 
+                <video id="video1" width="420">
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div> 
+
+            <script>
+                var myVideo = document.getElementById("video1");
+
+                function playPause()
+                {
+                    if (myVideo.paused)
+                        myVideo.play();
+                    else
+                        myVideo.pause();
+                }
+
+                function makeBig()
+                {
+                    myVideo.width = 560;
+                }
+
+                function makeSmall()
+                {
+                    myVideo.width = 320;
+                }
+
+                function makeNormal()
+                {
+                    myVideo.width = 420;
+                }
+            </script> 
+
+            <p>
+                Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+            </p>
+
+            <div class="row clearfix">
+                <div class="col-md-4 column">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <a  href="http://getbootstrap.com/getting-started/">
+                                <img  alt="140x140" src="http://lorempixel.com/140/140/" /> 
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <a  href="http://getbootstrap.com/getting-started/">
+                                <h4> Heading1</h4>
+                            </a>
+
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 column">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <a  href="http://getbootstrap.com/getting-started/">
+                                <img  alt="140x140" src="http://lorempixel.com/140/140/" /> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <a  href="http://getbootstrap.com/getting-started/">
+                                <h4> Heading2</h4>
+                            </a>
+
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 column">
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <a  href="http://getbootstrap.com/getting-started/">
+                                <img  alt="140x140" src="http://lorempixel.com/140/140/" /> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-md-12 column">
+                            <a  href="http://getbootstrap.com/getting-started/">
+                                <h4> Heading3</h4>
+                            </a>
+
+                            <p>
+                                Donec id elit non mi porta gravida at eget metus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <p>
+                        תחתית הדף
+                    </p>
+                </div>
+            </div>
+        </div>
+        -->
+
+    </body>
+</html>
