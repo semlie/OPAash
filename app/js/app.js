@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
+var m =angular.module('myApp', [
   'ngRoute',
   'myApp.filters',
   'myApp.services',
@@ -16,3 +16,10 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view4', {templateUrl: 'partials/form-step-2.html', controller: 'MyCtrl4'});
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
+//m.controller('semCtrl'[$scope, $http,
+//                function($scope, $http) {
+//                    $http.get('data/ashira.json').success(function(data) {
+//                        $scope.movies = data;
+//                    });
+//                    
+//                }]);
