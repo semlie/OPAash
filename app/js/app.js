@@ -8,6 +8,7 @@ var m =angular.module('myApp', [
   'myApp.services',
   'myApp.directives',
   'myApp.controllers'
+ 
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
@@ -16,10 +17,3 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view4', {templateUrl: 'partials/form-step-2.html', controller: 'MyCtrl4'});
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
-//m.controller('semCtrl'[$scope, $http,
-//                function($scope, $http) {
-//                    $http.get('data/ashira.json').success(function(data) {
-//                        $scope.movies = data;
-//                    });
-//                    
-//                }]);
