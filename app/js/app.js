@@ -17,4 +17,3 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view4', {templateUrl: 'partials/form-step-2.html', controller: 'MyCtrl4'});
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
-
