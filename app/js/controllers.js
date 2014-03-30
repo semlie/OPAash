@@ -18,5 +18,10 @@ angular.module('myApp.controllers', []).
   }])
   .controller('MyCtrl3`', [function() {
 
-  }]);
+  }]).controller("menuCtrl",['$scope','$http',function ($scope,$http) //angular 
+    {
+        $http.get('category_data.json').success(function(data) {
+                        $scope.all_cat = data;
+        });
+    }]);
   
