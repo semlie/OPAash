@@ -1,0 +1,29 @@
+<div class="container">
+            <div class="row clearfix">
+                <div class="well well-sm">
+
+                    <div class="col-xs-4 column" ng-repeat="i in movies|filter:{name:query}">
+                        <div class="row clearfix">
+                            <div class="thumbnail">
+
+                                <a  href="http://getbootstrap.com/getting-started/">
+                                    <img  alt="140x140" ng-src="http://lorempixel.com/140/140/sports/{{i.age %10}}/{{i.name}}" /> 
+                                </a>
+<!--                        <div class="row clearfix">-->
+
+
+                                <a  href="http://getbootstrap.com/getting-started/">
+                                    <h4> {{i.name}}</h4>
+                                </a>
+
+                                <p>
+                                    {{i.about.substring(0,150)}}
+                                </p>
+
+                        <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
