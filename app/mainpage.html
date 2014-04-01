@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>My AngularJS App</title>
+        <link rel="stylesheet" href="css/app.css"/>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body >
+        <div class="container" ng-controller="MyCtrl1">
+
+            <div class="row clearfix">
+                <div class="col-md-2 column">
+<!--                    <img alt="140x140" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfp4gihoRSCirDtpanf0-PWGyhxXktkEO8Diqvycty9LDYAY3k" />-->
+                </div>
+            </div>
+
+         <!--menu-->
+          <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12 column">
+                    <div class="row clearfix">
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                            <div class="container-fluid">
+
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#"><img alt="140x140" src="data:image/jpeg;base64,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"/></a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link</a></li>
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>-->
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search" ng-model="query">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+<!--                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>-->
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+
+
+                    </div>
+                </div>
+            </div>
+          </div>
+
+            
+          <!--repit-->
+            <div style ="margin-top:50px;" class="container">
+                <div class="row clearfix">
+                    <div class="well well-sm">
+                        <div class="col-xs-4 column" ng-repeat="i in movies|filter:query">
+                            <div class="row clearfix">
+                                <div class="thumbnail">
+                                    <a  href="http://getbootstrap.com/getting-started/">
+                                        <img  alt="140x140" ng-src="{{i.thumbnail_images.full.url}}" /> 
+                                    </a>
+                                    <!--                        <div class="row clearfix">-->
+                                    <a href="#tags/{{i.id}}"><h4> {{i.title}}</h4>"></a>
+                                   
+                                    <p>
+                                        {{i.description}}
+                                    </p>
+
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+              
+      <!--the footer-->
+        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container">
+                זה הפוטר שלנו            </div>
+        </nav>
+        <ul class="menu">
+            <li><a href="#/view1">view1</a></li>
+            <li><a href="#/view2">view2</a></li>
+            <li><a href="#/view3">view2</a></li>
+        </ul>
+
+        <div ng-view></div>
+
+
+
+        <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+        -->
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/filters.js"></script>
+        <script src="js/directives.js"></script>
+    </body>
+</html>
